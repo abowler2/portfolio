@@ -110,7 +110,7 @@ html {
 
 body {
   background: #fff;
-  color: #b46a79;
+  color: #078385;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -130,8 +130,9 @@ h3 {
 }
 
 h4 {
+  color: #f78478;
   font-weight: 400;
-  font-size: 1.25em;
+  font-size: 1.15em;
   margin: 5px 0;
 }
 
@@ -161,21 +162,6 @@ img {
   margin: 0 30px;
 }
 
-.third-width {
-  width: 55%;
-}
-
-/**************** Base Header / Footer Styles ****************/
-
-header, footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  background-color: #cae9d9;
-}
-
-
 /******* Header Styles *********/
 
 header {
@@ -191,7 +177,7 @@ header .full-width {
 
 header nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-flow: row wrap;
   width: 80%;
@@ -208,22 +194,11 @@ header nav ul {
 }
 
 header nav ul a {
-  color: #b46a79;
+  color: #078385;      /*#d3d4d6*/
   text-decoration: none;
 }
 
-/******* Footer Styles *********/
-
-footer {
-  text-align: center;
-  font-size: 0.75em;
-}
-
-/******************** Mobile Styles - Homepage *********************/
-
-/***** Hero Area Style *****/
-
-#hero {
+.homepage-header {
   background: url('../img/hero.jpg');
   background-size: cover;
   background-position: center;
@@ -234,18 +209,30 @@ footer {
   margin: 0;
 }
 
-#hero h1 {
-  font-size: 2.625em;
+.homepage-header h1 {
+  font-size: 2.3em;
   text-align: right;
   margin: 10px 10px 0 0;
 }
 
-#hero p {
-  color: /*#eeaac3*/ ;
-  font-size: 1.875em;
-  text-align: right;
-  margin: 30px 10px 0 0;
+.homepage-header p {
+  font-size: 1.24em;
+  margin-top: 10px;
 }
+
+/******* Footer Styles *********/
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  background-color: #7fbcb7;
+  text-align: center;
+  font-size: 0.75em;
+}
+
+/******************** Mobile Styles - Homepage *********************/
 
 /***** Work Area Style *****/
 
@@ -256,10 +243,14 @@ footer {
   background-color: #fff;
 }
 
+#work p {
+  font-size: 0.875em;
+}
+
 /***** About Area Style *****/
 
 #about {
-  background-color: #cae9d9;
+  background-color: #7fbcb7;
 }
 
 /***** About Area Style *****/
@@ -285,7 +276,7 @@ footer {
 
 #contact .contact-info a {
   text-decoration: none;
-  color: #b46a79;
+  color: #f78478;
 }
 
 #contact .social-icons {
@@ -295,7 +286,7 @@ footer {
 }
 
 #contact .social-icons p {
-  background: #b46a79;
+  background: #f78478;
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -396,8 +387,33 @@ footer {
    Modify as content requires.
    ========================================================================== */
 
-   @media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+   @media only screen and (min-width: 768px) {
+
+    /*** General ***/
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+      margin: 0 50px;
+    }
+
+    h2 {
+      font-size: 2.125em;
+    }
+
+    h3 {
+      font-size: 1.75em;
+    }
+
+    h4 {
+      font-size: 1.5em;
+    }
+
+    #hero h1 {
+      font-size: 4.5em;
+      margin: 50px 20px 0 0;
+    }
 }
 
 @media print,
