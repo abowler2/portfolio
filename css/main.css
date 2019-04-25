@@ -150,10 +150,6 @@ img {
   width: 100%;
 }
 
-.full-width {
-  width: 100%
-}
-
 .container {
   display: flex;
   justify-content: center;
@@ -166,13 +162,6 @@ img {
 
 header {
   padding: 15px;
-}
-
-header .full-width {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
 }
 
 header nav {
@@ -389,12 +378,10 @@ footer {
 
    @media only screen and (min-width: 768px) {
 
+    /**************** Tablet Styles **************/
+
     /*** General ***/
     .container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-flow: row wrap;
       margin: 0 50px;
     }
 
@@ -410,9 +397,31 @@ footer {
       font-size: 1.5em;
     }
 
-    #hero h1 {
-      font-size: 4.5em;
-      margin: 50px 20px 0 0;
+    /*************** Homepage tablet **************/
+
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-flow: row wrap;
+      width: 55%;
+      font-size: 1em;
+      padding-left: 260px;
+    }
+
+    .homepage-header {
+      min-height: 450px;
+    }
+
+    .homepage-header h1 {
+      font-size: 3.5em;
+      margin-top: 15px;
+    }
+
+    .homepage-header p {
+      font-size: 2em;
+      margin: 15px 10px 0 100px;
+      text-align: right;
     }
 }
 
