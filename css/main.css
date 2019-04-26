@@ -119,20 +119,21 @@ h1, h2 {
 }
 
 h2 {
+  color: #445643;
   font-size: 1.75em;
   margin-bottom: 0;
 }
 
 h3 {
   font-weight: 700;
-  font-size: 1.5em;
+  font-size: 1.25em;
   margin-bottom: 0;
 }
 
 h4 {
-  color: #f78478;
+  color: #09a7aa;
   font-weight: 400;
-  font-size: 1.15em;
+  font-size: 0.875em;
   margin: 5px 0;
 }
 
@@ -183,7 +184,7 @@ header nav ul {
 }
 
 header nav ul a {
-  color: #078385;      /*#d3d4d6*/
+  color: #445643;
   text-decoration: none;
 }
 
@@ -205,6 +206,7 @@ header nav ul a {
 }
 
 .homepage-header p {
+  color: #273126;
   font-size: 1.24em;
   margin-top: 10px;
 }
@@ -221,6 +223,10 @@ footer {
   font-size: 0.75em;
 }
 
+footer span {
+  color: #f96353;
+}
+
 /******************** Mobile Styles - Homepage *********************/
 
 /***** Work Area Style *****/
@@ -233,7 +239,7 @@ footer {
 }
 
 #work p {
-  font-size: 0.875em;
+  font-size: 0.75em;
 }
 
 /***** About Area Style *****/
@@ -248,11 +254,19 @@ footer {
   margin-bottom: 0;
 }
 
+#about h3, #about span, #about p {
+  color: #445643;
+}
+
 /***** Contact Area Style *****/
 
 #contact {
   text-align: center;
   flex-direction: column;
+}
+
+#contact h3 {
+  color: #445643;
 }
 
 #contact .container {
@@ -265,7 +279,7 @@ footer {
 
 #contact .contact-info a {
   text-decoration: none;
-  color: #f78478;
+  color: #09a7aa;
 }
 
 #contact .social-icons {
@@ -275,7 +289,7 @@ footer {
 }
 
 #contact .social-icons p {
-  background: #f78478;
+  background: #09a7aa;
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -422,6 +436,25 @@ footer {
       font-size: 2em;
       margin: 15px 10px 0 100px;
       text-align: right;
+    }
+
+    /********* Work section - Tablet ***********/
+
+    #work p {
+      font-size: 1.125em;
+    }
+
+    /************ About section - Tablet ***********/
+
+    #about article {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    #about article figure, #about article div {
+      width: 47%;
     }
 }
 
