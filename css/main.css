@@ -145,6 +145,7 @@ ul {
 
 figure {
   margin: 24px 0;
+  border: 1px solid #445643;
 }
 
 img {
@@ -170,7 +171,7 @@ header nav {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 80%;
+  width: 100%;
   font-size: 0.75em;
   font-weight: 700;
   text-transform: uppercase;
@@ -179,7 +180,7 @@ header nav {
 header nav ul {
   display: flex;
   justify-content: space-around;
-  width: 100%;
+  width: 80%;
   text-decoration: none;
 }
 
@@ -231,6 +232,10 @@ footer span {
 
 /***** Work Area Style *****/
 
+#work .container {
+  margin-bottom: 15px;
+}
+
 #work {
   display: flex;
   justify-content: center;
@@ -278,10 +283,13 @@ footer span {
 }
 
 #contact .container {
-  margin: 0 50px;
+  flex-flow: column wrap;
+  margin: 0 50px 15px 50px;
 }
 
 #contact p {
+  font-size: 0.75
+  line-height: 1em;
   margin: 5px 0;
 }
 
@@ -299,8 +307,8 @@ footer span {
 #contact .social-icons p {
   background: #09a7aa;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -308,7 +316,7 @@ footer span {
 
 #contact .social-icons p i {
   color: #fff;
-  font-size: 1.4em;
+  font-size: 1.35em;
 }
 
  /* ==========================================================================
@@ -398,7 +406,7 @@ footer span {
    Modify as content requires.
    ========================================================================== */
 
-   @media only screen and (min-width: 768px) {
+   @media only screen and (min-width: 600px) {
 
     /**************** Tablet Styles **************/
 
@@ -419,34 +427,57 @@ footer span {
       font-size: 1.5em;
     }
 
-    /*************** Homepage tablet **************/
-
-    header .container {
+    .row {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
       flex-flow: row wrap;
-      width: 55%;
-      font-size: 1em;
-      padding-left: 260px;
+      width: 100%;
     }
 
-    .homepage-header {
-      min-height: 450px;
+
+    /*************** Homepage - Tablet **************/
+
+    header nav {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex-flow: row wrap;
+      width: 100%;
+    }
+
+    header nav ul {
+      display: flex;
+      justify-content: space-around;
+      width: 55%
+    }
+
+    header nav ul li a {
+      font-size: 1.125em;
     }
 
     .homepage-header h1 {
-      font-size: 3.5em;
-      margin-top: 15px;
+      font-size: 3em;
+      margin-top: 10px;
     }
 
     .homepage-header p {
-      font-size: 2em;
+      font-size: 1.5em;
       margin: 15px 10px 0 100px;
       text-align: right;
     }
 
+
     /********* Work section - Tablet ***********/
+
+    #work .row {
+      justify-content: space-around;
+    }
+
+    #work p,
+    #work figure {
+      display: flex;
+      flex-flow: column wrap;
+      flex-basis: 45%;
+    }
 
     #work p {
       font-size: 1.125em;
@@ -463,6 +494,60 @@ footer span {
 
     #about article figure, #about article div {
       width: 47%;
+    }
+
+    /************ Contact section - Tablet ************/
+
+    #contact .container {
+      margin: 0 30px;
+    }
+
+    #contact .row {
+      margin-bottom: 15px;
+    }
+
+    #contact .contact-info,
+    #contact .social,
+    #contact .meetup {
+      display: flex;
+      flex-flow: column wrap;
+      flex-basis: 33%;
+    }
+
+    #contact .social-icons {
+      align-self: center;
+      justify-content: space-around;
+      width: 80%;
+    }
+
+    #contact h3 {
+      font-size: 1.5em;
+    }
+
+    #contact p {
+      font-size: 1em;
+      line-height: 0.75em;
+    }
+}
+
+/*************** med/large tablets ***************/
+
+    @media only screen and (min-width: 768px) {
+
+
+    .homepage-header {
+      min-height: 450px;
+    }
+
+    .homepage-header h1 {
+      font-size: 3.5em;
+      margin-top: 15px;
+    }
+
+    .homepage-header p {
+      font-size: 2em;
+      margin: 15px 10px 0 100px;
+      text-align: right;
     }
 }
 
