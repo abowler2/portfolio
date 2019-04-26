@@ -250,8 +250,16 @@ footer span {
 
 /***** About Area Style *****/
 
+#about article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 #about figure {
   margin-bottom: 0;
+  width: 65%;
 }
 
 #about h3, #about span, #about p {
