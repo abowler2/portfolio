@@ -200,16 +200,30 @@ header nav ul a {
   margin: 0;
 }
 
-.homepage-header h1 {
+.intro {
+  display: flex;
+  justify-content: flex-end;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.intro h1 {
+  display: flex;
+  justify-content: flex-end;
+  flex-basis: 80%
   font-size: 2.3em;
   text-align: right;
   margin: 10px 10px 0 0;
 }
 
-.homepage-header p {
+.intro p {
+  display: flex;
+  justify-content: flex-end;
+  flex-basis: 80%;
   color: #273126;
   font-size: 1.24em;
-  margin-top: 10px;
+  text-align: right;
+  margin: 10px 10px 0 0;
 }
 
 /******* Footer Styles *********/
@@ -466,7 +480,6 @@ footer span {
     .homepage-header p {
       font-size: 2em;
       margin: 15px 10px 0 100px;
-      text-align: right;
     }
 
 
