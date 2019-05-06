@@ -168,7 +168,7 @@ header {
 
 header nav {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   flex-flow: row wrap;
   width: 100%;
@@ -180,7 +180,7 @@ header nav {
 header nav ul {
   display: flex;
   justify-content: space-around;
-  width: 80%;
+  width: 30%;
   text-decoration: none;
 }
 
@@ -481,21 +481,7 @@ footer span {
     /*************** Homepage - Tablet **************/
 
     header nav {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      flex-flow: row wrap;
-      width: 100%;
-    }
-
-    header nav ul {
-      display: flex;
-      justify-content: space-around;
-      width: 40%
-    }
-
-    header nav ul a {
-      font-size: 1.125em;
+      font-size: 0.75em;
     }
 
     .homepage-header {
@@ -598,8 +584,8 @@ footer span {
 
     /**********  Header - Desktop **********/
 
-    header nav ul a {
-      font-size: 1.25em;
+    header nav {
+      font-size: 1em;
     }
 
     .homepage-header {
