@@ -119,7 +119,7 @@ h1, h2 {
 }
 
 h2 {
-  color: #445643;
+  color: #1f2a2c;
   font-size: 1.75em;
   margin-bottom: 0;
 }
@@ -172,7 +172,7 @@ header nav {
   align-items: center;
   flex-flow: row wrap;
   width: 100%;
-  font-size: 0.75em;
+  font-size: 0.5em;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -185,7 +185,7 @@ header nav ul {
 }
 
 header nav ul a {
-  color: #445643;
+  color: #1f2a2c;
   text-decoration: none;
 }
 
@@ -198,6 +198,31 @@ header nav ul a {
   justify-content: center;
   flex-flow: row wrap;
   margin: 0;
+}
+
+.work-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 0;
+}
+
+.work-header figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  flex-flow: row wrap;
+  border: none;
+  margin: 5px 0;
+}
+
+.header-divider {
+  background: #b4c7ca;
+  width: 100%;
+  height: 1px;
+  margin-bottom: 10px;
 }
 
 .intro {
@@ -220,7 +245,7 @@ header nav ul a {
   display: flex;
   justify-content: flex-end;
   flex-basis: 80%;
-  color: #273126;
+  color: #1f2a2c;
   font-size: 1.24em;
   text-align: right;
   margin: 10px 10px 0 0;
@@ -255,6 +280,11 @@ footer span {
   justify-content: center;
   flex-flow: row wrap;
   background-color: #fff;
+}
+
+#work a {
+  color: #078385;
+  text-decoration: none;
 }
 
 #work p {
@@ -563,7 +593,7 @@ footer span {
     }
 
     h4 {
-      font-size: 1.75em;
+      font-size: 1.5em;
     }
 
     /**********  Header - Desktop **********/

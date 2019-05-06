@@ -2,15 +2,34 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>April Bowler Portfolio</title>
-      <link rel="stylesheet" type="text/css" href="../css/main.css">
-      <link rel="stylesheet" type="text/css" href="../css/normalize.css">
-      <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700" rel="stylesheet">
+    <title>April Bowler Portfolio</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+    <meta name="theme-color" content="#fafafa">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700" rel="stylesheet">
   </head>
   <body>
+      <!--[if IE]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+      <![endif]-->
+
+      <!-- Add your site or application content here -->
     <div>
       <header>
-        <div class="full-width">
+        <div class="work-header">
+          <figure>
+            <img src="../img/logo.png" alt="A.Bowler">
+          </figure>
+          <div class="header-divider"></div>
           <nav>
               <ul>
                   <li><a href="../index.html">Home</a></li>
@@ -19,23 +38,23 @@
                   <li><a href="../index.html#contact">Contact</a></li>
               </ul>
           </nav>
-          <div class="full-width page-header">
-            <h1>My Work</h1>
-          </div>
         </div>
       </header>
 
       <section>
+        <div class="page-title container">
+            <h2>My Work</h2>
+        </div>
         <div>
-          <h2>Rogue Pickings Website</h2>
+          <h3>Rogue Pickings Website</h3>
           <img class="work-page-img1" src="../img/rogue-pickings.png" alt="Rogue Pickings">
         </div>
         <div>
-          <h2>Jubilee Austen Portfolio Site</h2>
+          <h3>Jubilee Austen Portfolio Site</h3>
           <img class="work-page-img2" src="../img/jubilee-austen-full.png" alt="Jubilee Austen Portfolio">
         </div>
         <div>
-          <h2>Holstee Manifesto</h2>
+          <h3>Holstee Manifesto</h3>
           <img class="work-page-img3" src="../img/holstee-manifesto-full.png" alt="Holstee Manifesto">
         </div>
       </section>
@@ -45,5 +64,18 @@
         </div>
       </footer>
     </div>
+
+    <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+      ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
   </body>
 </html>
