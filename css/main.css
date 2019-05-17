@@ -236,7 +236,7 @@ header nav ul a {
   display: flex;
   justify-content: flex-end;
   flex-basis: 80%
-  font-size: 2.3em;
+  font-size: 2.2em;
   text-align: right;
   margin: 0px 10px 0 0;
 }
@@ -246,7 +246,7 @@ header nav ul a {
   justify-content: flex-end;
   flex-basis: 80%;
   color: #1f2a2c;
-  font-size: 1.24em;
+  font-size: 1.2em;
   text-align: right;
   margin: 5px 10px 0 0;
 }
