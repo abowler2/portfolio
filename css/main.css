@@ -306,8 +306,18 @@ footer span {
 }
 
 #about figure {
-  margin-bottom: 0;
-  width: 65%;
+  display: flex;
+  max-height: 600px;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin: auto;
+  border: none;
+}
+
+.about-image{
+  max-width: 260px;
+  height: auto;
+  margin: 15px auto;
 }
 
 #about h3, #about span, #about p {
@@ -610,6 +620,12 @@ footer span {
     #about p {
       font-size: 1.5em;
       line-height: 1.25em;
+    }
+
+    .about-image {
+      max-width: 350px;
+      margin: 25px auto;
+      padding-left: 50px;
     }
 
   }
