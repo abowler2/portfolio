@@ -180,13 +180,16 @@ header nav {
 header nav ul {
   display: flex;
   justify-content: space-around;
-  width: 45%;
+  width: 35%;
   text-decoration: none;
 }
 
 header nav ul a {
   color: #1f2a2c;
   text-decoration: none;
+}
+header nav ul a:hover {
+  color: #078385;
 }
 
 .homepage-header {
@@ -202,7 +205,7 @@ header nav ul a {
 
 .work-header {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
@@ -212,7 +215,7 @@ header nav ul a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 25%;
+  flex-basis: 10%;
   flex-flow: row wrap;
   border: none;
   margin: 5px 0;
