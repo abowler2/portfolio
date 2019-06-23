@@ -387,11 +387,10 @@ footer span {
 
 .flip-card-container {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: space-around;
+  flex-flow: row wrap;
   max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
+  padding-bottom: 30px;
 }
 
 .flip-card {
@@ -407,8 +406,8 @@ footer span {
 .flip-card,
 .flip-card-front,
 .flip-card-back {
-  width: 320px;
-  height: 220px;
+  width: 315px;
+  height: 225px;
 }
 
 
@@ -434,6 +433,19 @@ footer span {
 
 .flip-card-back {
   transform: rotateY(180deg);
+}
+
+.links {
+  display: inline;
+}
+
+.links a {
+  background-color: #09a7aa;
+  border-radius: 5px;
+  color: #445643;
+  text-decoration: none;
+  margin: 0 7px;
+  padding: 0 10px;
 }
 
 
