@@ -399,6 +399,7 @@ footer span {
 
 .flip-card:hover .flipper,
 .flip-card.hover .flipper {
+  -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
 
@@ -411,7 +412,9 @@ footer span {
 
 
 .flipper {
+  -webkit-transition: 0.6s;
   transition: 0.6s;
+  /*-webkit-transform: preserve-3d; */
   transform-style: preserve-3d;
   position: relative;
 }
@@ -422,11 +425,13 @@ footer span {
   position: absolute;
   top: 0;
   left: 0;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
 .flip-card-front {
   z-index: 2;
+  -webkit-transform: rotateY(0deg);
   transform: rotateY(0deg);
 }
 
