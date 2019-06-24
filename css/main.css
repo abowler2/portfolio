@@ -388,8 +388,8 @@ footer span {
   display: flex;
   justify-content: space-around;
   flex-flow: row wrap;
-  max-width: 900px;
-  padding-bottom: 30px;
+  max-width: 1300px;
+  padding-bottom: 10px;
 }
 
 .flip-card {
@@ -645,10 +645,19 @@ footer span {
       font-size: 1em;
       line-height: 0.75em;
     }
+
+    /****************  Work Page -- Tablet Styling *****************/
+
+    .flip-card,
+    .flip-card-front,
+    .flip-card-back {
+      width: 360px;
+      height: 235px;
+    } 
 }
 
 
-/**************  Desktop Styling ********************/
+/*********************  Desktop Styling ***************************/
 
 /***  General  ***/
 
@@ -707,10 +716,6 @@ footer span {
 
     .work-title {
       margin-bottom: 50px
-    }
-
-    .flip-card-container {
-      max-width: 1300px;
     }
 
     .flip-card,
