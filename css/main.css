@@ -381,7 +381,6 @@ footer span {
 /********* Main section *********/
 
 .work-title {
-  font-size: 1.5em;
   margin-top: 0;
 }
 
@@ -447,7 +446,6 @@ footer span {
   margin: 0 7px;
   padding: 0 10px;
 }
-
 
  /* ==========================================================================
    Helper classes
@@ -704,6 +702,23 @@ footer span {
       margin: 25px auto;
       padding-left: 50px;
     }
+
+    /******************* Work Page Desktop Styling ***************/
+
+    .work-title {
+      margin-bottom: 50px
+    }
+
+    .flip-card-container {
+      max-width: 1300px;
+    }
+
+    .flip-card,
+    .flip-card-front,
+    .flip-card-back {
+      width: 500px;
+      height: 355px;
+    } 
 
   }
 
