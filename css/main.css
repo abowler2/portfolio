@@ -214,7 +214,7 @@ header nav ul a:hover {
 .intro h1 {
   display: flex;
   justify-content: flex-end;
-  flex-basis: 80%
+  flex-basis: 80%;
   font-size: 2.2em;
   text-align: right;
   margin: 0px 10px 0 0;
@@ -320,7 +320,7 @@ footer span {
 }
 
 #contact p {
-  font-size: 0.75
+  font-size: 0.75;
   line-height: 1em;
   margin: 5px 0;
 }
