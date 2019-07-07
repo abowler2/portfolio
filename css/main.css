@@ -385,6 +385,10 @@ footer span {
   margin-top: 0;
 }
 
+.long-text {
+  font-size: 0.75em;
+}
+
 .flip-card-container {
   display: flex;
   justify-content: space-around;
@@ -732,6 +736,10 @@ footer span {
       width: 500px;
       height: 355px;
     } 
+
+    .long-text {
+      font-size: 1em;
+    }
 
   }
 
