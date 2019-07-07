@@ -431,6 +431,8 @@ footer span {
   left: 0;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .flip-card-front {
@@ -441,6 +443,11 @@ footer span {
 
 .flip-card-back {
   transform: rotateY(180deg);
+}
+
+.flip-card-back p {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .links {
